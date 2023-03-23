@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  background: url(https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1206&q=80)
+    no-repeat center center / cover;
+  position: absolute;
+  top: -30px; /* abychom se zbavili nehezkych okraju u bluru */
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px); /* 0 nic, cim vyssi hodnota tim vetsi rozmazani*/
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
